@@ -54,6 +54,7 @@ ul li a:hover {
     position: relative;
     text-align: left;
     color: whitesmoke;
+    background-attachment: fixed;
 }
 
 .body {
@@ -80,11 +81,6 @@ ul li a:hover {
     float: right;
     max-width: 300px;
     height: fit-content;
-}
-
-.fade {
-    animation: fadeInUp;
-    animation-duration: 1.5s;
 }
 
 nextTo {
@@ -127,7 +123,7 @@ nextTo {
     width: 33%;
     text-align: center;
     padding: 0px 40px 0px 40px;
-
+    overflow: visible;
 }
 
 .kontti div h {
@@ -161,7 +157,7 @@ nextTo {
 }
 
 .welcome2 {
-    color: black;
+    color: white;
     font-family: "Roboto Flex", sans-serif;
     font-weight: 400;
     font-size: 20px;
@@ -204,6 +200,7 @@ nextTo {
     box-shadow: 0 4px 0 black;
     transform-style: preserve-3d;
     backface-visibility: hidden;
+    margin-top: 20px;
 }
 
 .getInTouch button:hover {
@@ -241,3 +238,17 @@ nextTo {
     font-family: "Roboto Flex", sans-serif;
     font-size: 20px;
 }
+
+.aboutLast {
+    background-image: url('tausta.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 40px;
+    margin-bottom: 40px;
+    min-height: auto;
+    color: white;
+}
+
+
