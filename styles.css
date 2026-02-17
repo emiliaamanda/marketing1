@@ -166,7 +166,7 @@ nextTo {
     font-weight: 400;
     font-size: 20px;
     font-style: normal;
-    padding: 0px 40px 40px 40px;
+    padding: 5px 40px 40px 40px;
     text-align: center;
 }
 
@@ -225,4 +225,19 @@ nextTo {
 .kortit p {
     font-family: "Roboto Flex", sans-serif;
     text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px 0px 40px;
+}
+
+.team h1 {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.team p {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 20px;
 }
