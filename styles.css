@@ -1,3 +1,15 @@
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.header img {
+    height: 30px;
+    width: auto;
+    padding-left: 40px;
+    padding-top: 27.5px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -5,14 +17,13 @@ ul {
     display: flex;
     background-color: rgb(253, 253, 253);
     justify-content: center;
-    position: sticky;
     top: 0;
 }
 
 ul li {
     display: block;
     color: aliceblue;
-    padding: 14px 16px;
+    padding: 15px 16px;
     text-decoration: none;
 }
 
@@ -30,9 +41,13 @@ ul li a {
 }
 
 ul li a:hover {
-    background-color: #422c57;
-    color: white;
+    background-color: #e8e8e8;
+    color: black;
     border-radius: 10px;
+}
+
+.container header {
+    min-height: 80%;
 }
 
 .container {
@@ -42,21 +57,39 @@ ul li a:hover {
 }
 
 .body {
+    background-color: #ECF8F9;
     color: black;
     font-family: "Roboto Flex", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    padding: 40px 40px 20px 40px;
+    padding: 40px 40px 40px 40px;
     text-align: left;
 }
 
 .body h1 {
-    font-size: 40px;
+    font-size: 50px;
+    padding-bottom: 40px;
 }
 
 .body p {
-    font-size: 20px;
+    font-size: 25px;
+}
+
+.body img {
+    float: right;
+    max-width: 300px;
+    height: fit-content;
+}
+
+.fade {
+    animation: fadeInUp;
+    animation-duration: 1.5s;
+}
+
+nextTo {
+    display: flex;
+    flex-direction: row;
 }
 
 .foot {
@@ -81,19 +114,130 @@ ul li a:hover {
     font-size: 30px;
 }
 
+.kontti {
+    display: flex;
+    padding: 0px 40px 0px 40px;
+    gap: 40px;
+}
+
+.kontti div {
+    border: 2px solid black;
+    border-radius: 20px;
+    font-family: "Roboto Flex", sans-serif;
+    width: 33%;
+    text-align: center;
+    padding: 0px 40px 0px 40px;
+
+}
+
+.kontti div h {
+    font-size: 40px;
+}
+
+.kontti div p {
+    font-size: 20px;
+}
+
+.konttiOtsikko {
+    font-family: "Roboto Flex", sans-serif;
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+
+.konttiOtsikko2 {
+    font-family: "Roboto Flex", sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
 .welcome {
     color: black;
     font-family: "Roboto Flex", sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 40px 40px 20px 40px;
+    padding: 40px 40px 40px 40px;
+    text-align: center;
+}
+
+.welcome2 {
+    color: black;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    padding: 5px 40px 40px 40px;
     text-align: center;
 }
 
 .welcome h1 {
     font-size: 50px;
+    padding-bottom: 40px;
 }
 
 .welcome p {
     font-size: 25px;
+}
+
+.getInTouch {
+    font-family: "Roboto Flex", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+
+.getInTouch p {
+    margin: 0;
+}
+
+.getInTouch button {
+    font-size: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background-color: #364c7c;
+    color: white;
+    padding: 20px;
+    border-radius: 5rem;
+    border: none;
+    box-shadow: 0 4px 0 black;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.getInTouch button:hover {
+    filter: brightness(1.5);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 0 black;
+}
+
+.getInTouch button:active {
+    border-bottom: 2px solid black;
+    filter: brightness(0.9);
+    transform: translateY(2px);
+}
+
+.kortit {
+    padding-bottom: 40px;
+}
+
+.kortit p {
+    font-family: "Roboto Flex", sans-serif;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px 0px 40px;
+}
+
+.team h1 {
+    font-family: "Roboto Flex", sans-serif;
+}
+
+.team p {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 20px;
 }
